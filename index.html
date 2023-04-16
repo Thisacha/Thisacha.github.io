@@ -30,30 +30,58 @@
 			background-size: cover;
 			background-position: center center;
 		}
+
+        /* CSS code for dropdown menu */
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 50px;
+			left: 0;
+			background-color: #333;
+			display: none;
+		}
+
+		nav ul li {
+			float: none;
+			display: block;
+			padding: 10px;
+			position: relative;
+			text-align: left;
+			width: 200px;
+		}
+
+		nav ul li:hover {
+			background-color: #ddd;
+		}
+
+		nav ul ul {
+			left: 200px;
+			top: 0;
+		}
+
+		/* CSS code to show dropdown menu on hover */
+		nav li:hover > ul {
+			display: inherit;
+
+
 	</style>
 </head>
 <body>
 	<!-- HTML code for menu -->
 	<nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a>
-                <ul>
-                    <li><a href="#">Product 1</a></li>
-                    <li><a href="#">Product 2</a></li>
-                    <li><a href="#">Product 3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a>
-                <ul>
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </nav>
+		<a href="#">Home</a>
+		<a href="#">About</a>
+		<li><a href="#">Services</a>
+			<ul>
+				<li><a href="#">Service 1</a></li>
+				<li><a href="#">Service 2</a></li>
+				<li><a href="#">Service 3</a></li>
+			</ul>
+		</li>
+		<a href="#">Contact</a>
+	</nav>
 
 	<!-- HTML code for the rest of the website -->
 	<h1>Welcome to my website!</h1>
